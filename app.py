@@ -25,7 +25,7 @@ def main():
 		'pins' : pins
 		}
 	# Pass template data into template main.html, return it to user
-	return render_template('main.html', **templateData)
+	return render_template('app.html', **templateData)
 
 # The function below is executed when someone requests a URL with pin no. and action in it:
 @app.route("/<changePin>/<action>")
